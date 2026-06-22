@@ -145,7 +145,7 @@ function App() {
     try {
       const link = await getTossShareLink(
         "intoss://today-nyamnyam/",
-        "https://static.toss.im/appsintoss/53075/92448f8e-4cc4-4726-a46c-8a8913079cd7.png",
+        "https://raw.githubusercontent.com/asjds22/today-nyamnyam/main/public/og-image.png",
       );
       await share({
         message: `오늘 뭐 먹지? 🍚 "${result.name}" 어때요?\n${link}`,
