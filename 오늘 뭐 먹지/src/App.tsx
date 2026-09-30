@@ -92,9 +92,7 @@ function FoodIcon({ type }: { type: FoodType }): ReactNode {
 
 function App() {
   const [radius, setRadius] = useState(500);
-  const [selectedTypes, setSelectedTypes] = useState<FoodType[]>([
-    ...FOOD_TYPES,
-  ]);
+  const [selectedTypes, setSelectedTypes] = useState<FoodType[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<Restaurant | null>(null);

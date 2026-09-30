@@ -4,7 +4,19 @@
     {
       "name": "ait-dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
+      "port": 5173
+    },
+    {
+      "name": "ait-dev-subfolder",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "-e",
+        "process.chdir('오늘 뭐 먹지');import(require('url').pathToFileURL(require('path').resolve('node_modules/vite/bin/vite.js')).href)"
+      ],
       "port": 5173
     }
   ]
